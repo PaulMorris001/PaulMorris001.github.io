@@ -1,0 +1,99 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: hotpink;
+}
+
+.password-generator__container{
+  background-color: khaki;
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0, .3);
+}
+
+.password-generator__container h2{
+  font-size: 25px;
+}
+
+.input-section{
+  border: 2px solid black;
+  padding: 10px;
+  background: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-section input{
+  width: 300px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.input-section input::placeholder{
+  letter-spacing: 0;
+}
+
+.fa-copy{
+  opacity: .3;
+  cursor: pointer;
+}
+
+.fa-copy:hover{
+  opacity: .9;
+}
+
+.fa-copy:active{
+  transform: translateY(3px);
+}
+
+button{
+  margin: 15px 0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+button:hover{
+  background-color: dodgerblue;
+}
+
+button:active{
+  transform: scale(.95);
+}
+
+.alert{
+  position: fixed;
+  width: 300px;
+  height: 50px;
+  background-color: khaki;
+  color: black;
+  bottom: 10%;
+  right: 0;
+  border-radius: 10px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.active{
+  right: -400px;
+}
